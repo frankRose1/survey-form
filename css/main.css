@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+:root{
+    --fccGreen: #007E00;
+    --p25: 25px;
+    --m15: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--fccGreen);
+}
+
+
+section.main {
+   
+    /* background-image:linear-gradient( rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../img/feedback.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+}
+
+.container {
+    margin:0 auto;
+    max-width: 1140px;
+    padding: var(--p25);
+}
+
+form{
+    width: 100%;
+    background-color: #eee;
+    border-radius: 10px;
+    text-align: center;
+    padding: var(--p25);
+}
+
+textarea {
+    width: 350px;
+    height: 50px;
+}
+
+legend{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+legend::after{
+    content: "";
+    width: 150px;
+    background-color: #000;
+    height: 2px;
+    display: block;
+    margin: 10px auto 15px auto;
+}
+
+fieldset:not(.submit)::after{
+    content: "";
+    width: 300px;
+    background-color: #E0E0E0;
+    height: 2px;
+    display: block;
+    margin: 25px auto;
+}
+
+textarea#other, textarea#other2{
+    display: none;
+}
+
+#title{
+    color: #fff;
+    font-size: 50px;
+    line-height: 55px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: var(--m15);
+} 
+
+#description{
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: var(--m15);
+}
+
+/* Individual fieldsets */
+fieldset.pedigree input{
+    width:180px;
+    padding: 4px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+}
+
+fieldset.pedigree label{
+   margin-right: 7px;
+}
+
+/* submit btn */
+input[type="submit"] {
+    padding: 12px 16px;
+    background-color: var(--fccGreen);
+    color:#fff;
+    font-size: 18px;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.6s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #006400;
+}
