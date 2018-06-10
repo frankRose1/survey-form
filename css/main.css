@@ -94,7 +94,7 @@ input {
 
 textarea.other, textarea.other2 {
     width: 500px;
-    height: 80px;
+    height: 100px;
     background: var(--fccDarkGreen);
     color: #fff;
     border: none;
@@ -109,6 +109,31 @@ textarea.other, textarea.other2 {
 
 textarea.other.show, textarea.other2.show {
     opacity: 1;
+}
+
+.custom-select {
+    margin: 20px 0;
+}
+
+.custom-select select {
+    color: #fff;
+    padding: 5px 8px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    background: var(--fccDarkGreen);
+    background-image: none;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.custom-select select:focus {
+    outline: none;
 }
 
 ::placeholder{

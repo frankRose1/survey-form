@@ -44,16 +44,18 @@
                  <fieldset class="f2">
                     <div class="form-content">
                         <legend>Which option best describes your current role?</legend>
-                        <select name="roles" id="dropdown">
-                            <option value="default"selected disabled>Select An Option</option>
-                            <option value="student" class="d1">Student</option>
-                            <option value="ftEmployee" class="d1">Full Time Job</option>
-                            <option value="ftLearner" class="d1">Full Time Learner</option>
-                            <option value="not say" class="d1">Prefer Not To Say</option>
-                            <option value="other" class="d1">Other</option>
-                        </select>
+                        <div class="custom-select">
+                            <select name="roles" id="dropdown">
+                                <option value="default" disabled>Select An Option</option>
+                                <option value="student" class="d1">Student</option>
+                                <option value="ftEmployee" class="d1">Full Time Job</option>
+                                <option value="ftLearner" class="d1">Full Time Learner</option>
+                                <option value="not say" class="d1">Prefer Not To Say</option>
+                                <option value="other" class="d1">Other</option>
+                            </select>
+                        </div>
                         <!-- hide by default, show if user clicks 'other' from dropdown -->
-                        <textarea name="other" class="other" placeholder="Can you please provide some detail"></textarea>
+                        <textarea name="other" class="other" placeholder="Can you please provide some detail..."></textarea>
                     </div>
                  </fieldset>
 
@@ -72,16 +74,18 @@
                  <fieldset class="f4">
                      <div class="form-content">
                         <label for="dropdown2">What do you like most in FCC?</label>
-                        <select name="tracks" id="dropdown2">
-                            <option value="default"selected disabled>Select An Option</option>
-                            <option value="student">Challenges</option>
-                            <option value="ftEmployee">Projects</option>
-                            <option value="ftLearner">Community</option>
-                            <option value="not say">Open Source</option>
-                            <option value="other2">Other</option>
-                        </select>
+                        <div class="custom-select">
+                            <select name="tracks" id="dropdown2">
+                                <option value="default" disabled>Select An Option</option>
+                                <option value="student">Challenges</option>
+                                <option value="ftEmployee">Projects</option>
+                                <option value="ftLearner">Community</option>
+                                <option value="not say">Open Source</option>
+                                <option value="other2">Other</option>
+                            </select>
+                        </div>
                         <!-- hide by default, show if user clicks 'other' from dropdown -->
-                        <textarea name="other" class="other2" placeholder="Can you please provide some detail"></textarea>
+                        <textarea name="other" class="other2" placeholder="Can you please provide some detail..."></textarea>
                     </div>
                 </fieldset>
 
