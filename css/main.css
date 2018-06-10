@@ -7,9 +7,7 @@
     --m15: 15px;
 }
 
-
-
-
+/* GENERAL STYLES */
 * {
     box-sizing: border-box;
 }
@@ -47,6 +45,7 @@ img.logo {
     width: 300px;
 }
 
+/* FORM STYLES */
 form{
     color: white;
     background-color: var(--fccGreen);
@@ -79,7 +78,7 @@ legend::after {
     margin: 20px auto;
 }
 
-input {
+input:not(input[type="radio"]) {
     margin: 10px;
     padding: 5px;
     font-size: 22px;
@@ -142,7 +141,7 @@ textarea.other.show, textarea.other2.show {
 }
 
 /* hide the fields here for styling */
- .f1, .f3, .f4, .f5, .f6 {
+ .f1, .f2, .f4, .f5, .f6 {
      display: none;
  }
 
@@ -169,6 +168,38 @@ fieldset.f1 label{
 fieldset.f1 label.active{
     transform: translateX(0);
     opacity: 1;
+}
+
+/* FIELDSET 3 */
+.radio-cont{
+    width: 300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"] + label{
+    margin-bottom: var(--m15);
+    background: url('https://lh3.googleusercontent.com/CSygHWUdWSpIIfoPv3gwc0PctzOTVFGSCcSel4lOtxBBofmpt1QJxOF8MwrXbi0lIxxnKw2Cj6btMFTJZIGxWpkNpHZL41cOa5sgeSgtlsmat7YjkQlrU2XbmhPrxZwElMf9hucSAfEgF0VRLQy58ATRdf1mQULv5VcfnWFyus03KF8Egtg_pwW1_LRnklFEAUUZ_TyzEqFM3cp6G_aDyQpNCKxNvoLWkrcV-tgxqxQGAqC45JAkWWNXSxKgXD8TINX_xO1oml6fh_qVC32SwSQZqkk8Mkhvi2V3DSME0BzcS7wlku5tUK9ijkksro3Wp9kS7Ng4kyPDpkhZAh0kaiKXe4vUXfpZhhXuVjMwaP04HmMFJ7tjKt7bKvIHo0LcKv1zbbQsJ5ZTbI9wRabnUk9dWZtKE0w9BwiNbHuw1JrJBzmSCon9aQZD2DCD72DZEgaUchpdWKi-jShqHvrhaUYUeOUQiImDmo9NBKocQIW76p69uns8tbm1XXohE6tc-PKj8Cx66YtZLm4oUsvppee7Sw92GBFNvMPP9BGZSvxZmpV6TV5rNga1JBJOCMKw76SuYRNob9jCPmjzVMYjmFN8GknmaqOti7kh-QP7IlTUleyq=w25-h24-no') left center no-repeat;
+    display: block;
+    min-height: 25px;
+    padding: 5px 0;
+    font-size: 22px;
+    line-height: 27px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 5px;
+}
+input[type="radio"] + label:hover{
+    background-color: var(--fccDarkGreen);
+}
+
+input[type=radio]:checked + label {
+    background: url('https://lh3.googleusercontent.com/QSVgoBuOonsWKUZm6m0NKwekEvkfMOWrPFfevisISZjzeu2uQkxMOY1MUh3QgorRu2qc1kwKX4So7-mGJ-hayMAitq15L63KQNBfsOcm1qmWDU657CNl4lauYhgVz7f59IMrZBg8FWdgh26VDCvGMwUqaK6CBVv13AdKbxDMeDqiZS73EgzF5kBW5smh1nxCY5Gqk8yCmDsYh4KixdZWKGW7BqXLZn7cB2fQV4-o0DePjN69GJLXmddJ6H32CBgiFKE4smBvb1ByWpREmRYpFEUaHuQdbhHiiebI4Kipz35I6OxsVxKC6HOIQC3Xk6JVePhgudB2_-8Nyq2M9rWqIap8kAhmN-FI8iRdSLXhTV4FEeTHqokQ0qEXEZ5N9dRKoXT3al1Alcwrson_OtaALHldR9O7BO6Iq5_BV7-ERpoSYD8wGGhCcWQbjKkz5qHTa8yWRAfZaCLnK8Dzs0DPJtgMjQirittz8cpQQxQM4fhzXvG2x_Dtev4Y1YcZbzsaU6FpamC188SkjEDGOjYnf6CTk0VVbPk1DXFPIEGbOmc7b1unsq7uHOOkuRkGnTQ_d8aLNNPpeDvxP4agpI-ycfdH2ciG4sRXSKcdeAXGIHhNaI9T=w25-h24-no') left center no-repeat;
 }
 
 /* CONTROLS DIV */
