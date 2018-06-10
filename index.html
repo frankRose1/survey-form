@@ -30,30 +30,30 @@
                     <div class="form-content">
                         <legend>Lets start with the basics</legend>
                     
-                        <label for="name" id="name-label"></label>
+                        <label  for="name" id="name-label">Name</label>
                         <input type="text" name="name" id="name" placeholder="Your name..." required><br>
 
-                        <label for="email" id="email-label"></label>
+                        <label for="email" id="email-label">Email</label>
                         <input type="email" name="email" id="email" placeholder="Your email..." required><br>
 
-                        <label for="number" id="number-label"></label>
+                        <label for="number" id="number-label">Age</label>
                         <input type="number" name="age" id="number" min="1" max="100" placeholder="Your age..." required><br>
                     </div>
                  </fieldset>
 
                  <fieldset class="f2">
                     <div class="form-content">
-                        <label for="dropdown">Which option best describes your current role?</label>
+                        <legend>Which option best describes your current role?</legend>
                         <select name="roles" id="dropdown">
                             <option value="default"selected disabled>Select An Option</option>
-                            <option value="student">Student</option>
-                            <option value="ftEmployee">Full Time Job</option>
-                            <option value="ftLearner">Full Time Learner</option>
-                            <option value="not say">Prefer Not To Say</option>
-                            <option value="other">Other</option>
+                            <option value="student" class="d1">Student</option>
+                            <option value="ftEmployee" class="d1">Full Time Job</option>
+                            <option value="ftLearner" class="d1">Full Time Learner</option>
+                            <option value="not say" class="d1">Prefer Not To Say</option>
+                            <option value="other" class="d1">Other</option>
                         </select>
                         <!-- hide by default, show if user clicks 'other' from dropdown -->
-                        <textarea name="other" id="other" placeholder="(optional)Can you please provide some detail"></textarea>
+                        <textarea name="other" class="other" placeholder="Can you please provide some detail"></textarea>
                     </div>
                  </fieldset>
 
@@ -78,10 +78,10 @@
                             <option value="ftEmployee">Projects</option>
                             <option value="ftLearner">Community</option>
                             <option value="not say">Open Source</option>
-                            <option value="other">Other</option>
+                            <option value="other2">Other</option>
                         </select>
                         <!-- hide by default, show if user clicks 'other' from dropdown -->
-                        <textarea name="other" id="other2" placeholder="(optional)Can you please provide some detail"></textarea>
+                        <textarea name="other" class="other2" placeholder="Can you please provide some detail"></textarea>
                     </div>
                 </fieldset>
 

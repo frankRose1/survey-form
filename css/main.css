@@ -7,6 +7,9 @@
     --m15: 15px;
 }
 
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -32,6 +35,7 @@ body {
 
 header{
     background-color: #fff;
+    text-align: center;
     position: fixed;
     padding: 50px 20px;
     top:0;
@@ -60,38 +64,7 @@ fieldset{
     height: 80%;
 } 
 
-input {
-    margin: 10px;
-    padding: 5px;
-    font-size: 22px;
-    background: var(--fccDarkGreen);
-    color: #fff;
-    border: none;
-    border-bottom: 1px solid white;
-    border-radius: 5px;
-    width: 300px;
-    cursor: pointer;
-}
-
-::placeholder{
-    color: #fff;
-    opacity: 1;
-}
-
- .f2, .f3, .f4, .f5, .f6 {
-     display: none;
- }
-
-.form-content {
-  position:absolute;
-  top:35%;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
-
-/* FIELDSET 1 */
-fieldset.f1 legend{
+legend{
     font-size: 35px;
     line-height: 40px;
     font-weight: 700;
@@ -106,11 +79,71 @@ legend::after {
     margin: 20px auto;
 }
 
+input {
+    margin: 10px;
+    padding: 5px;
+    font-size: 22px;
+    background: var(--fccDarkGreen);
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+
+textarea.other, textarea.other2 {
+    width: 500px;
+    height: 80px;
+    background: var(--fccDarkGreen);
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+textarea.other.show, textarea.other2.show {
+    opacity: 1;
+}
+
+::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+
+/* hide the fields here for styling */
+ .f1, .f3, .f4, .f5, .f6 {
+     display: none;
+ }
+
+.form-content {
+  position:absolute;
+  top:35%;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+/* FIELDSET 1 */
+
 fieldset.f1 label{
     font-size: 25px;
     font-weight: 700;
     line-height: 30px;
     margin-right: 10px;
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: all 0.5s ease-in-out;
+}
+
+fieldset.f1 label.active{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /* CONTROLS DIV */

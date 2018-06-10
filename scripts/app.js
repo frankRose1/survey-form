@@ -1,16 +1,22 @@
 $(document).ready(function(){
+    
     const leftArr = $('.lt');
     const rightArr = $('.rt');
     //input fields
     const textInput = $('input[type="text"]');
     const emailInput = $('input[type="email"]');
     const ageInput = $('input[type="number"]');
+    //dropdown menus
+    const menu1 = document.querySelector('#dropdown');;
+    const menu2 = $('#dropdown2');
+    const other = $('option[value="other"]');
 
+    //toggle the placeholder text in and out of the input/label
     function shiftText(){
         const text = $(this).attr('placeholder');
         const id = $(this).attr('id');
         const label = $('label[for="'+ id +'"]');
-        $(label).text(text);
+        $(label).addClass('active');
         $(this).attr('placeholder', '');
     } 
 
@@ -18,11 +24,10 @@ $(document).ready(function(){
         const id = $(this).attr('id');
         const label = $('label[for="'+ id +'"]');
         const  text = label.text();
-        $(this).attr('placeholder', text);
-        label.text('');
+        $(this).attr('placeholder', `${text}...`);
+        label.removeClass('active');
     }
 
-    //toggle the placeholder text in and out of the input/label
     textInput.on('mouseenter', shiftText);
     textInput.on('mouseleave', replaceText);
 
@@ -31,4 +36,17 @@ $(document).ready(function(){
 
     ageInput.on('mouseenter', shiftText);
     ageInput.on('mouseleave', replaceText);
-});
+
+    //show the textarea if user selects 'other'
+    function showField(e){
+        const textArea1 = document.querySelector('.other');
+        const textArea2 = document.querySelector('.other2');
+        if( e.target.value === 'other'){ 
+            textArea1.classList.add('show');
+        } else {
+            textArea1.classList.remove('show');
+        }
+    }
+    menu1.addEventListener('change', showField);
+
+}); //end doc ready
