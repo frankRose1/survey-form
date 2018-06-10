@@ -13,6 +13,7 @@
 
 a {
     font-size: 40px;
+    cursor: pointer;
     text-decoration: none;
     color: #fff;
     opacity: 0.7;
@@ -60,12 +61,16 @@ fieldset{
 } 
 
 input {
+    margin: 10px;
+    padding: 5px;
+    font-size: 22px;
     background: var(--fccDarkGreen);
     color: #fff;
     border: none;
-    /* border-bottom: 1px solid white; */
-    margin-top: 10px;
+    border-bottom: 1px solid white;
     border-radius: 5px;
+    width: 300px;
+    cursor: pointer;
 }
 
 ::placeholder{
@@ -102,6 +107,9 @@ legend::after {
 }
 
 fieldset.f1 label{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
     margin-right: 10px;
 }
 
