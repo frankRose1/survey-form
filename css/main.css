@@ -2,6 +2,7 @@
 
 :root{
     --fccGreen: #007E00;
+    --fccDarkGreen: #006400;
     --p25: 25px;
     --m15: 15px;
 }
@@ -28,6 +29,19 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+header{
+    background-color: #fff;
+    position: fixed;
+    padding: 50px 20px;
+    top:0;
+    left: 0;
+    right: 0;
+}
+
+img.logo {
+    width: 300px;
+}
+
 form{
     color: white;
     background-color: var(--fccGreen);
@@ -46,12 +60,12 @@ fieldset{
 } 
 
 input {
-    background: var(--fccGreen);
+    background: var(--fccDarkGreen);
     color: #fff;
     border: none;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
     margin-top: 10px;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 ::placeholder{
