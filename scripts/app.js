@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+
     const leftArr = $('.lt');
     const rightArr = $('.rt');
     //input fields
@@ -7,8 +7,8 @@ $(document).ready(function(){
     const emailInput = $('input[type="email"]');
     const ageInput = $('input[type="number"]');
     //dropdown menus
-    const menu1 = document.querySelector('#dropdown');;
-    const menu2 = $('#dropdown2');
+    const menu1 = document.querySelector('#dropdown');
+    const menu2 = document.querySelector('#dropdown2');
     const other = $('option[value="other"]');
 
     //toggle the placeholder text in and out of the input/label
@@ -43,10 +43,14 @@ $(document).ready(function(){
         const textArea2 = document.querySelector('.other2');
         if( e.target.value === 'other'){ 
             textArea1.classList.add('show');
+        } else if(e.target.value === 'other2') {
+            textArea2.classList.add('show');
         } else {
             textArea1.classList.remove('show');
+            textArea2.classList.remove('show');
         }
     }
     menu1.addEventListener('change', showField);
+    menu2.addEventListener('change', showField);
 
 }); //end doc ready

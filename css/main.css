@@ -67,6 +67,7 @@ legend{
     font-size: 35px;
     line-height: 40px;
     font-weight: 700;
+    letter-spacing: 1.5;
 }
 
 legend::after {
@@ -91,7 +92,7 @@ input:not(input[type="radio"]) {
     cursor: pointer;
 }
 
-textarea.other, textarea.other2 {
+textarea.other, textarea.other2, textarea.comments {
     width: 500px;
     height: 100px;
     background: var(--fccDarkGreen);
@@ -141,7 +142,7 @@ textarea.other.show, textarea.other2.show {
 }
 
 /* hide the fields here for styling */
- .f1, .f2, .f4, .f5, .f6 {
+ .f1, .f2, .f3, .f4, .f5 {
      display: none;
  }
 
@@ -150,7 +151,6 @@ textarea.other.show, textarea.other2.show {
   top:35%;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
 /* FIELDSET 1 */
@@ -200,6 +200,38 @@ input[type="radio"] + label:hover{
 
 input[type=radio]:checked + label {
     background: url('https://lh3.googleusercontent.com/QSVgoBuOonsWKUZm6m0NKwekEvkfMOWrPFfevisISZjzeu2uQkxMOY1MUh3QgorRu2qc1kwKX4So7-mGJ-hayMAitq15L63KQNBfsOcm1qmWDU657CNl4lauYhgVz7f59IMrZBg8FWdgh26VDCvGMwUqaK6CBVv13AdKbxDMeDqiZS73EgzF5kBW5smh1nxCY5Gqk8yCmDsYh4KixdZWKGW7BqXLZn7cB2fQV4-o0DePjN69GJLXmddJ6H32CBgiFKE4smBvb1ByWpREmRYpFEUaHuQdbhHiiebI4Kipz35I6OxsVxKC6HOIQC3Xk6JVePhgudB2_-8Nyq2M9rWqIap8kAhmN-FI8iRdSLXhTV4FEeTHqokQ0qEXEZ5N9dRKoXT3al1Alcwrson_OtaALHldR9O7BO6Iq5_BV7-ERpoSYD8wGGhCcWQbjKkz5qHTa8yWRAfZaCLnK8Dzs0DPJtgMjQirittz8cpQQxQM4fhzXvG2x_Dtev4Y1YcZbzsaU6FpamC188SkjEDGOjYnf6CTk0VVbPk1DXFPIEGbOmc7b1unsq7uHOOkuRkGnTQ_d8aLNNPpeDvxP4agpI-ycfdH2ciG4sRXSKcdeAXGIHhNaI9T=w25-h24-no') left center no-repeat;
+}
+
+/* FIELDSET 5 */
+.f5 legend {
+    font-size: 30px;
+}
+
+/* FIELDSET 6 */
+textarea.comments {
+    opacity: 1;
+}
+
+input[type="submit"] {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--fccDarkGreen);
+    color: white;
+    height: 50px;
+    width: 100px; 
+    text-shadow:none;
+    font-size: 18px;
+    line-height: 23px;
+    transition: all 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    color: var(--fccDarkGreen);
+    background: #fff;
 }
 
 /* CONTROLS DIV */
