@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
-    const leftArr = $('.lt');
-    const rightArr = $('.rt');
+    const fieldsets = $('fieldset');
+    const leftArrow = $('.lt');
+    const rightArrow = $('.rt');
     //input fields
     const textInput = $('input[type="text"]');
     const emailInput = $('input[type="email"]');
@@ -52,5 +53,44 @@ $(document).ready(function(){
     }
     menu1.addEventListener('change', showField);
     menu2.addEventListener('change', showField);
+
+    //use the arrows to show the next fieldset
+    function prev(){
+        let currentField;
+        let prevField; 
+        //loop over the fieldsets to get the current position
+        $(fieldsets).each( (i, el)=> {
+            if ($(el).css('display') === 'block'){
+                if(i === 0){
+                    return;
+                } else {
+                    currentField = el;
+                    prevField = fieldsets[i-1];
+                } 
+            } //end first if stmn
+        }); //end loop
+        $(currentField).hide();
+        $(prevField).show(1500);
+    }
+
+    function next(){
+        let currentField;
+        let nextField;
+        $(fieldsets).each( (i, el) =>{
+            if ($(el).css('display') === 'block'){
+                    if(i === (fieldsets.length - 1)){
+                        return;
+                    } else {
+                        currentField = el;
+                        nextField = fieldsets[i+1];
+                    } 
+                } //end first if stmn    
+        }); //end loop
+        $(currentField).hide();
+        $(nextField).show(1500);
+    }
+
+    leftArrow.on('click', prev);
+    rightArrow.on('click', next);
 
 }); //end doc ready

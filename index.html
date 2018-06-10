@@ -25,101 +25,113 @@
 
             <!-- <h1 id="title">FCC Survey Form</h1>
             <p id="description">Let us know how we can improve freeCodeCamp</p> -->
-            <form action="post" id="survey-form">
-                <fieldset class="f1">
-                    <div class="form-content">
-                        <legend>Lets start with the basics</legend>
-                    
-                        <label  for="name" id="name-label">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Your name..." required><br>
-
-                        <label for="email" id="email-label">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Your email..." required><br>
-
-                        <label for="number" id="number-label">Age</label>
-                        <input type="number" name="age" id="number" min="1" max="100" placeholder="Your age..." required><br>
-                    </div>
-                 </fieldset>
-
-                 <fieldset class="f2">
-                    <div class="form-content">
-                        <legend>Which option best describes your current role?</legend>
-                        <div class="custom-select">
-                            <select name="roles" id="dropdown">
-                                <option value="default" disabled>Select An Option</option>
-                                <option value="student" class="d1">Student</option>
-                                <option value="ftEmployee" class="d1">Full Time Job</option>
-                                <option value="ftLearner" class="d1">Full Time Learner</option>
-                                <option value="not say" class="d1">Prefer Not To Say</option>
-                                <option value="other" class="d1">Other</option>
-                            </select>
-                        </div>
-                        <!-- hide by default, show if user clicks 'other' from dropdown -->
-                        <textarea name="other" class="other" placeholder="Can you please provide some detail..."></textarea>
-                    </div>
-                 </fieldset>
-
-                 <fieldset class="f3">
-                    <div class="form-content">
-                        <legend>How likely are you to recommend freeCodeCamp to a freind?</legend>
-                        <div class="radio-cont">
-                            <input type="radio" id="definatley" name="recommend" value="definatley">
-                            <label for="definatley">Definatley</label> <br>
-                            <input type="radio" id="not-sure" name="recommend" value="unsure">
-                            <label for="not-sure">Not Sure</label><br>
-                            <input type="radio" id="maybe" name="recommend" value="maybe">
-                            <label for="maybe">Maybe</label> 
-                        </div>
-                     </div>
-                 </fieldset>
-
-                 <fieldset class="f4">
-                     <div class="form-content">
-                        <legend>What do you enjoy the most in FCC?</legend>
-                        <div class="custom-select">
-                            <select name="tracks" id="dropdown2">
-                                <option value="default" disabled>Select An Option</option>
-                                <option value="student">Challenges</option>
-                                <option value="ftEmployee">Projects</option>
-                                <option value="ftLearner">Community</option>
-                                <option value="not say">Open Source</option>
-                                <option value="other2">Other</option>
-                            </select>
-                        </div>
-                        <!-- hide by default, show if user clicks 'other' from dropdown -->
-                        <textarea name="other" class="other2" placeholder="Can you please provide some detail..."></textarea>
-                    </div>
-                </fieldset>
-
-                <fieldset class="f5">
-                    <div class="form-content">
-                        <legend>Things that should be improved in the future<br>(check all that apply)</legend>
-                        <input type="checkbox" name="suggestion1" value="frontEnd">Front-end Projects<br>
-                        <input type="checkbox" name="suggestion2" value="backEnd">Back-end Projects<br>
-                        <input type="checkbox" name="suggestion3" value="data">Data Visualization<br>
-                        <input type="checkbox" name="suggestion4" value="challenges">Challenges<br>
-                        <input type="checkbox" name="suggestion5" value="community">Open Source Community<br>
-                        <input type="checkbox" name="suggestion6" value="help rooms">Help Rooms<br>
-                        <input type="checkbox" name="suggestion7" value="videos">Videos<br>
-                        <input type="checkbox" name="suggestion8" value="meetups">City Meetups<br>
-                        <input type="checkbox" name="suggestion9" value="wiki">Wiki<br>
-                        <input type="checkbox" name="suggestion10" value="forums">Forums<br>
-                        <input type="checkbox" name="suggestion11" value="courses">Additional Courses
-                    </div>
-                </fieldset>
-
-                <fieldset class="f6">
-                    <div class="form-content">
-                        <legend>Any comments or suggestions?</legend>
-                        <textarea name="comments" class="comments" placeholder="Enter your comments here..."></textarea>
-                        <input type="submit">
-                    </div>
-                </fieldset>
-                <div class="controls">
-                        <a href="#" class="lt"><i class="fas fa-arrow-circle-left"></i></a>
-                        <a href="#" class="rt"><i class="fas fa-arrow-circle-right"></i></a>
+<form action="post" id="survey-form">
+    <fieldset class="f1">
+        <div class="form-content">
+            <legend>Lets start with the basics</legend>
+            
+            <label  for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your name..." required><br>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your email..." required><br>
+            <label for="number" id="number-label">Age</label>
+            <input type="number" name="age" id="number" min="1" max="100" placeholder="Your age..." required><br>
+        </div>
+    </fieldset>
+    <fieldset class="f2">
+        <div class="form-content">
+            <legend>Which option best describes your current role?</legend>
+            <div class="custom-select">
+                <select name="roles" id="dropdown">
+                    <option value="default" disabled>Select An Option</option>
+                    <option value="student" class="d1">Student</option>
+                    <option value="ftEmployee" class="d1">Full Time Job</option>
+                    <option value="ftLearner" class="d1">Full Time Learner</option>
+                    <option value="not say" class="d1">Prefer Not To Say</option>
+                    <option value="other" class="d1">Other</option>
+                </select>
+            </div>
+            <!-- hide by default, show if user clicks 'other' from dropdown -->
+            <textarea name="other" class="other" placeholder="Can you please provide some detail..."></textarea>
+        </div>
+    </fieldset>
+    <fieldset class="f3">
+        <div class="form-content">
+            <legend>How likely are you to recommend freeCodeCamp to a freind?</legend>
+            <div class="radio-cont">
+                <input type="radio" id="definatley" name="recommend" value="definatley">
+                <label for="definatley">Definatley</label> <br>
+                <input type="radio" id="not-sure" name="recommend" value="unsure">
+                <label for="not-sure">Not Sure</label><br>
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">Maybe</label>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="f4">
+        <div class="form-content">
+            <legend>What do you enjoy the most in FCC?</legend>
+            <div class="custom-select">
+                <select name="tracks" id="dropdown2">
+                    <option value="default" disabled>Select An Option</option>
+                    <option value="student">Challenges</option>
+                    <option value="ftEmployee">Projects</option>
+                    <option value="ftLearner">Community</option>
+                    <option value="not say">Open Source</option>
+                    <option value="other2">Other</option>
+                </select>
+            </div>
+            <!-- hide by default, show if user clicks 'other' from dropdown -->
+            <textarea name="other" class="other2" placeholder="Can you please provide some detail..."></textarea>
+        </div>
+    </fieldset>
+    <fieldset class="f5">
+        <div class="form-content">
+            <legend>Things that should be improved in the future<br>(check all that apply)</legend>
+            <div class="radio-cont checkboxes">
+                <div class="col-1">
+                    <input id="frontEnd" type="checkbox" name="suggestion1" value="frontEnd">
+                    <label for="frontEnd">Front-end Projects</label><br>
+                    <input id="backEnd" type="checkbox" name="suggestion2" value="backEnd">
+                    <label for="backEnd">Back-end Projects</label><br>
+                    <input id="data" type="checkbox" name="suggestion3" value="data">
+                    <label for="data">Data Visualization</label><br>
+                    <input id="challenges" type="checkbox" name="suggestion4" value="challenges">
+                    <label for="challenges">Challenges</label><br>
+                    <input id="community" type="checkbox" name="suggestion5" value="community">
+                    <label for="community">Open Source Community</label><br>
+                    <input id="help-rooms" type="checkbox" name="suggestion6" value="help rooms">
+                    <label for="help-rooms">Help Rooms</label><br>
                 </div>
-            </form>
+                <div class="col-2">
+                    <input id="videos" type="checkbox" name="suggestion7" value="videos">
+                    <label for="videos">Videos</label><br>
+                    <input id="meetups" type="checkbox" name="suggestion8" value="meetups">
+                    <label for="meetups">City Meetups</label><br>
+                    <input id="wiki" type="checkbox" name="suggestion9" value="wiki">
+                    <label for="wiki">Wiki</label><br>
+                    <input id="forums" type="checkbox" name="suggestion10" value="forums">
+                    <label for="forums">Forums</label><br>
+                    <input id="courses" type="checkbox" name="suggestion11" value="courses">
+                    <label for="courses">Additional Courses</label><br>
+                    <input id="blogs" type="checkbox" name="suggestion12" value="blogs">
+                    <label for="blogs">Blog Posts</label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="f6">
+        <div class="form-content">
+            <legend>Any comments or suggestions?</legend>
+            <textarea name="comments" class="comments" placeholder="Enter your comments here..."></textarea>
+            <input type="submit">
+        </div>
+    </fieldset>
+    <div class="controls">
+        <a href="#" class="lt"><i class="fas fa-arrow-circle-left"></i></a>
+        <a href="#" class="rt"><i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+</form>
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
