@@ -170,6 +170,13 @@ fieldset.f1 label.active{
     opacity: 1;
 }
 
+.f1 .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /* FIELDSET 3 */
 .radio-cont{
     width: 300px;
@@ -223,25 +230,13 @@ input[type=checkbox] {
 	margin-bottom:  10px;
     cursor: pointer;
 }
- 
-/* input[type=checkbox] + label {
-	 background: url('https://lh3.googleusercontent.com/Xxv2PonyC_el80dSzxdDFkgF7gM_Ru7u9ErRZS9hJeC9V1W073WowYQIhyivqHd74mt7GQBpL8aK9Aqsv9Kf2Ku_hjmsXsAZstjM0jFW4iQ85BYM41OnftEitTSzC0VagQ0hAxAYBbvTlOztGsDf5WOTW39gixPLf7DTZ72-YKANYzf1nMSH6Pc2b4_MTf4deEku7cS_xenmFAwlO5wM9lAs2TXRbOJBmuJmlIm1f6Zv7CNQR96yldK98z9QtDkDiZib2YxdFNXK_eLec8yWy-syA3imgmBDrlCR7BGZzVN36PTJDe5yChArZ-Gn2QHZAwsMCtKys_tKjngmgnYvTyj182U3jTz1Lt0N9OLpv_N4ouK8o4QEvvGs8BOTx9jAnlHoDY8D_QsKLgf_Vo1OG_DCJj67b3MTu9BYU4o3UXQgjTx7R-fHrl8V_zSHpaJyN61dwt0wVX9kerZxfxdFLnKu2CQOBITobLfZK0Q9T4REe2goZOqX0EQHfvLWuLlw7cur_VdXJctEKYCqINzeYxFqeyh1VGRkOjaY-ke73m8KkG2EYSlym7p1sYnX53xzNG66C5vCvHRm7624WZj9a2pTXSwjLCGEcQYtZ96nPTUYmrn-=s23-no') left top no-repeat;
-	padding-left: 50px;
-}
- 
-input[type=checkbox]:checked + label {
-	background: url('https://lh3.googleusercontent.com/HtfShMuTVS5ellcvc4pNootlL8UKbR93Q6XHDDhcXmlxB6ImLN_A5WpYZSGDT_NJjPIK7MUl2jlwdFnD6RNYKak6bEYJ0X453PgqaNS_TEWp8Ck4fysY6Rx08jfENtWmpPETSqOeB3BoSLVuD8ZUdXlJ37ArYTmDbsCQA41zTuD1lT2m59ze9odMF2PB8FEQimdJtkyq1572ywgIdZwlimHTn3fgLK2OHza42kl22Wr4_JX1Ih1yEaqjQQTYS-5uGyiZat0SqRNoxdoYilsqcgQ0fLGiKjaPQb7gGbVjl1NFzfP5Mbyu7sOIQQ8sbRAZx63rNbD-fhvG5bLFuYulqyO6VBTBJ82KtumHkUV1ejR0sRn6hK-eFWJ7jvl1wnoqM3Ps6yFh7Jsl67r_9Yr5WF-nTwGYX979k0R7ZGmeL82tg2PGdzUlfiez6iuE6jByvEMsLC3QCLbUhA8-IY9pX-bi3b1YHq4jPk1Up5o1m15i1QuQk0fE4QuRNPBrd8L54bSjFF7mqmAdDwvC5y8wuj8O3GPYF5KA9AupDJIsE5C5-DcbkIhjvcBDaLHSpDq8KLI5BRUE9PunQl9GUrW3BdFagrJ1l79MmysIwewy_yGHRbnI=s23-no') left top no-repeat;
-	display: block;
-	min-height: 23px;
-	padding-left: 50px;
-} */
 
 /* FIELDSET 6 */
 textarea.comments {
     opacity: 1;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -250,15 +245,14 @@ input[type="submit"] {
     border-radius: 5px;
     background: var(--fccDarkGreen);
     color: white;
-    height: 50px;
-    width: 100px; 
+    padding:  20px;
     text-shadow:none;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 22px;
+    line-height: 27px;
     transition: all 0.5s ease-in-out;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
     color: var(--fccDarkGreen);
     background: #fff;
 }

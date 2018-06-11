@@ -40,15 +40,14 @@ $(document).ready(function(){
 
     //show the textarea if user selects 'other'
     function showField(e){
-        const textArea1 = document.querySelector('.other');
-        const textArea2 = document.querySelector('.other2');
-        if( e.target.value === 'other'){ 
-            textArea1.classList.add('show');
-        } else if(e.target.value === 'other2') {
-            textArea2.classList.add('show');
-        } else {
-            textArea1.classList.remove('show');
-            textArea2.classList.remove('show');
+        let textArea;
+        if( e.target.value === 'other' || e.target.value === 'other2'){ 
+            const value = e.target.value;
+            textArea = document.querySelector(`textarea[name="${value}"]`);
+            textArea.classList.add('show');
+        }  else {
+            document.querySelector('.other').classList.remove('show');
+            document.querySelector('.other2').classList.remove('show');
         }
     }
     menu1.addEventListener('change', showField);
