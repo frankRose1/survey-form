@@ -70,11 +70,15 @@ $(document).ready(function(){
         }); //end loop
         $(currentField).hide();
         $(prevField).show(1500);
+        prevField === fieldsets[0] ? $(leftArrow).addClass('hide') : $(leftArrow).removeClass('hide');
+        prevField === fieldsets[fieldsets.length - 2] ? $(rightArrow).removeClass('hide') : '';
     }
 
     function next(){
         let currentField;
         let nextField;
+        $(leftArrow).addClass('active');
+        $(leftArrow).removeClass('hide');
         $(fieldsets).each( (i, el) =>{
             if ($(el).css('display') === 'block'){
                     if(i === (fieldsets.length - 1)){
@@ -87,6 +91,7 @@ $(document).ready(function(){
         }); //end loop
         $(currentField).hide();
         $(nextField).show(1500);
+        nextField === fieldsets[fieldsets.length - 1] ? $(rightArrow).addClass('hide') : $(rightArrow).removeClass('hide');
     }
 
     leftArrow.on('click', prev);

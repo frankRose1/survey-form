@@ -266,11 +266,25 @@ button[type="submit"]:hover {
      justify-content: space-between;
  }
 
+/* hide thte lt by default on page load */
  .lt {
      margin-left: 40px;
+     opacity:  0;
+     visibility: hidden;
+     transition:  all 0.5s ease-in-out;
  }
 
- .rt {
+ .rt{
      margin-right: 40px;
+ }
+
+ .lt.active, .rt.active{
+    opacity: 0.7;
+    visibility: visible;
+}
+
+ .lt.hide, .rt.hide {
+    opacity: 0;
+    visibility: hidden;
  }
  
