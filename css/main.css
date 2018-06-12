@@ -288,3 +288,24 @@ button[type="submit"]:hover {
     visibility: hidden;
  }
  
+
+ /* MEDIA QUERIES */
+@media (max-width: 500px) {
+    .f1 legend, .f3 legend  {
+        font-size:  25px;
+        line-height: 30px;
+    }
+
+    .f2 legend{
+        font-size: 20px;
+        line-height:  25px;
+    }
+
+    .lt{
+        margin-left:  60px;
+    }
+
+    .rt{
+        margin-left:  60px;
+    }
+}
