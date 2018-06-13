@@ -67,7 +67,6 @@ legend{
     font-size: 35px;
     line-height: 40px;
     font-weight: 700;
-    letter-spacing: 1.5;
 }
 
 legend::after {
@@ -150,6 +149,7 @@ textarea.other.show, textarea.other2.show {
   position:absolute;
   top:35%;
   left: 50%;
+  padding:  50px;
   transform: translateX(-50%);
 }
 
@@ -291,14 +291,24 @@ button[type="submit"]:hover {
 
  /* MEDIA QUERIES */
 @media (max-width: 500px) {
-    .f1 legend, .f3 legend  {
+    legend {
         font-size:  25px;
         line-height: 30px;
+        margin:  0 80px;
     }
 
-    .f2 legend{
-        font-size: 20px;
+    .custom-select select {
+        width:  150px;
+        font-size:  20px;
         line-height:  25px;
+    }
+    .checkboxes {
+        justify-content: center;
+    }
+
+    textarea.other, textarea.other2, textarea.comments {
+        width: 250px;
+        font-size: 14px;
     }
 
     .lt{
